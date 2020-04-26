@@ -1,0 +1,19 @@
+
+
+env:
+    msg1: "hello"
+    msg2: "world!"
+
+speed: 3
+
+repeat: 1
+
+states:
+    - state:
+        top: "     ^  ^  {msg1}     "
+        mid: "    (ù.ù )___(       "
+        low: "     //||-//||       "
+    - state:
+        top: "     ^  ^  {msg2}    "
+        mid: "    ( ô.ô)___(       "
+        low: "     //||-//||       "
