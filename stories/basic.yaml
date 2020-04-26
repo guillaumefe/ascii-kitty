@@ -1,0 +1,21 @@
+
+- state: "std_speak"
+  duration: 1
+
+- state: "std"
+  duration: 1
+
+- state: 'surprised'
+  duration: 1
+
+- state: 'walk1'
+  duration: 1
+
+- state: 'walk2'
+  duration: 1
+
+- state: 'walk1'
+  duration: 1
+
+- state: 'walk2'
+  duration: 1

@@ -1,0 +1,8 @@
+
+env:
+    msg: 'hello'
+
+state:
+    ears : '             ^   ^  {msg}'
+    face : '            (ù.ù )___('
+    paws : '             //||-//||'

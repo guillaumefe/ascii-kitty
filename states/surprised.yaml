@@ -1,0 +1,8 @@
+
+env:
+    msg: 'world'
+
+state:
+    ears : '             ^  ^  {msg}'
+    face : '            ( ô.ô)___('
+    paws : '             //||-//||'
