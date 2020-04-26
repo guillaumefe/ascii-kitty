@@ -1,14 +1,13 @@
 import time
 import yaml
+import os
 
 story = 'basic'
-states = {
-        'std' : yaml.load(open('states/std.yaml', 'r')),
-        'walk1' : yaml.load(open('states/walk1.yaml', 'r')),
-        'walk2' : yaml.load(open('states/walk2.yaml', 'r')),
-        'std_speak' : yaml.load(open('states/std_speak.yaml', 'r')),
-        'surprised' : yaml.load(open('states/surprised.yaml', 'r'))
-        }
+states = {}
+
+for filename in os.listdir('states'):
+    state = os.path.splitext(os.path.basename(filename))[0]
+    states[state] = yaml.load(open(f'states/{state}.yaml', 'r'))
 
 stream = open('stories/'+story+'.yaml', 'r')
 story = yaml.load(stream)
