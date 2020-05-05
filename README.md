@@ -12,12 +12,12 @@ Build little ascii friends that can speak and move
 ## Installation
 ```
 python3 -m pip install storii
+
+# storii [filename] [optional:speed] [optional:repeat]
 ```
 
 ## Usage
 ```
-storii [filename] [optional:speed] [optional:repeat]
-
 Example:
 
 ls -l stories/
@@ -72,16 +72,9 @@ states:
         face: '   (ù.ù )___( '
         paws: '    ||\\-||\\ '
 
-### Add chit-chat in a state
 ```
-Example:
 
-env:
-    msg: "hello world!"
-
-## Build Stories
-```
-### Repeat the story n times
+### Repeat a story n times
 ```
 Example:
 
@@ -118,6 +111,8 @@ states:
 ```
 
 ## Develop
+
+### Build dist
 ```
 git clone https://github.com/guillaumefe/storii
 cd storii
@@ -138,7 +133,7 @@ python3 -m pip install twine
 python3 -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*
 ```
 
-#### Install from pip (test)
+### Install from pip (test)
 ```
 python3 -m pip install --index-url https://test.pypi.org/simple/ storii
 ```
@@ -150,5 +145,7 @@ python3 -m pip install twine
 python3 -m twine upload dist/*
 ```
 
-#### Install from pip (prod)
+### Install from pip (prod)
+```
 python3 -m pip install storii 
+```
